@@ -1,0 +1,61 @@
+%  Daniel O'Keeffe	%
+%~~~~~~~~~~~~~~~~~~~%
+%  PACKAGES
+\include{common/packages}
+
+% TITLE INFORMATION
+\title[Journal Club]{The octopus genome and the evolution of cephalopod neural and morphological novelties}
+%\subtitle{Journal Club}
+\author[Daniel~O'Keeffe]{Daniel~O'Keeffe}%\inst{1}}
+\institute[Trinity College Dublin]{
+	%\inst{1}% For multiple authours
+	Smurfit Institute of Genetics\\
+	Trinity College Dublin\\
+	Dublin 2\\
+	Ireland
+}
+\date[2015]{Journal Club, \today}
+\subject{Genetics}
+
+\begin{document}
+	\lstset{language=R}
+
+	% SLIDE 
+	\frame{\titlepage}	
+
+	%Content goes here
+	\begin{frame}
+		\frametitle{This is the first slide}
+	\end{frame}
+	%More content goes here
+	\begin{frame}
+		\frametitle{This is the second slide}
+		\framesubtitle{A bit more information about this}
+	\end{frame}
+
+	% Include a slide from slides rather than directly here
+	\include{slides/slide}
+
+	% SLIDE 
+	\begin{frame}[fragile]
+		\frametitle{My Attempt}
+		\framesubtitle{A quick test of frequencies}
+		$H_0$: Asymmetrically fast evolving genes occur with equal frequency to symmetric fast evolving genes.\\
+		$H_1$: Frequencies are not equal.
+		\begin{lstlisting}
+			>>> binom.test(72, 76, p=.5)
+		\end{lstlisting}
+		Exact binomial test\\
+
+		data:  72 and 76\\
+		number of successes = 72, number of trials = 76, $p$-value $< 2.2\times10^{-16}$\\
+		alternative hypothesis: true probability of success is not equal to 0.5\\
+		95 percent confidence interval:\\
+		$0.8706908$ $0.9854754$\\
+		sample estimates:\\
+		probability of success\\ 
+		$0.9473684$\\
+	\end{frame}
+
+% etc
+\end{document}

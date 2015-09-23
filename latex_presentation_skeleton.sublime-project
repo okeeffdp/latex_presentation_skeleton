@@ -1,0 +1,10 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"file_exclude_patterns": ["*.snm", "*.vrb", "*.tx.bak", "*.out", "*.aux", "*.log", "*.nav", "*.toc", "*.gz"]
+
+		}
+	]
+}

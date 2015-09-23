@@ -1,0 +1,45 @@
+%  Daniel O'Keeffe  %
+%~~~~~~~~~~~~~~~~~~~%
+
+%  DOCUMENT TYPE DECLARATION
+\documentclass[12pt]{article}
+
+%  DOCUMENT MARGINS
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} 
+
+%  CAPTIONS
+  %  Declare the overall style to be used by captions
+  %  Here it is small font size and bold type.
+\usepackage[labelfont={bf,small}, position=top]{caption}
+  %  New commands can be declared
+  %  Such as the pipe seperator
+\DeclareCaptionLabelSeparator{pipe}{~\textbar~}
+  %  New commands can then be initialized for a specific figure or table,
+  %  or declared for the global document as is here
+\captionsetup{labelsep=pipe}
+%  The subfigure package alters subfigures
+\usepackage{subcaption}
+
+%  PLACEHOLDER TEXT
+\usepackage{lipsum}
+\setlipsumdefault{1-2}
+
+%  HYPERLINKS
+\usepackage{hyperref}
+  %  Set hyperlink type
+\hypersetup{breaklinks, colorlinks, linkcolor=black, urlcolor=black, anchorcolor=black, citecolor=black}
+
+%  MATHEMATICS
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+%  TEXT
+\usepackage[utf8]{inputenc}
+
+%  DIAGRAMS
+\usepackage{graphicx}
+
+%  REFERENCES
+\usepackage{natbib}
+\bibpunct{(}{)}{;}{a}{,}{,}
