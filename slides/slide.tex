@@ -1,7 +1,25 @@
 %  Daniel O'Keeffe
 
 \begin{frame}
-  \frametitle{This is a slide}
-  \framesubtitle{A bit more information about this slide}
+  \frametitle{Bayes' theorem}
+  \framesubtitle{My attempt at an explanation\footnotemark}
+
+  \begin{equation} \label{eq:bayes_standard}
+  P(A \mid B) = \frac{{\color{red}P(A)} \times {\color{darkgreen}P(B \mid A)}}{{\color{blue}P(B)}}
+  \end{equation}
+  \newline
+
+  \begin{equation} \label{eq:bayes_english}
+  Posterior = \frac{{\color{red}Prior} \times {\color{darkgreen}Likelihood}}{{\color{blue}Evidence}}
+  \end{equation}
+  \newline
+
+  \begin{equation} \label{eq:bayes_phylo}
+  f(t, r \mid D) = \frac{{\color{red}f(t)f(r \mid t)} \times {\color{darkgreen}L(D \mid t, r)}}{{\color{blue}Z}}
+  \end{equation}
+  \newline
+
   %More content goes here
+  \footnotetext[1]{Taken from \^{y}hat $|$ Naive Bayes in Python}
+
 \end{frame}
